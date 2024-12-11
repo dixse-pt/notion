@@ -207,8 +207,13 @@
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
+        else if (id === "whatsapp") {
+          var phoneNumber = "0608015850"; // Remplacez par le numéro de téléphone souhaité
+          var message = "Bonjour, ceci est un message pré-rempli."; // Remplacez par le message souhaité
+          var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+          window.open(url, '_blank').focus();
+        }
       }
-
     </script>
 
 
