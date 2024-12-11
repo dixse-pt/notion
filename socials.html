@@ -151,14 +151,14 @@
     <div class="wrapper">
 
       <!-- Start linkedin Icon -->
-      <div id="gitlab" onclick="navigate(this.id)" class="fill gitlab">
-        <span class="icon"><i class="fab fa-gitlab"></i></span>
-      </div>
-      <!-- End linkedin Icon -->
-
-      <!-- Start linkedin Icon -->
       <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
         <span class="icon"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+      
+      <!-- Start linkedin Icon -->
+      <div id="gitlab" onclick="navigate(this.id)" class="fill gitlab">
+        <span class="icon"><i class="fab fa-gitlab"></i></span>
       </div>
       <!-- End linkedin Icon -->
 
@@ -222,7 +222,7 @@
         }
         else if (id === "whatsapp") {
           var phoneNumber = "+33608015850"; // Remplacez par le numéro de téléphone souhaité
-          var message = "Bonjour, ceci est un message pré-rempli."; // Remplacez par le message souhaité
+          var message = "Bonjour Julien, rentrons en contact !."; // Remplacez par le message souhaité
           var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
           window.open(url, '_blank').focus();
         }
