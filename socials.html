@@ -120,6 +120,17 @@
       background-color: #2AABEE;
     }
 
+    .whatsapp:hover,
+    .whatsapp::after {
+      background-color: #075e54;
+    }
+
+        .gitlab:hover,
+    .gitlab::after {
+      background-color: #fc6d26;
+    }
+
+    
     .social {
       position: relative;
       margin: 10px;
@@ -139,11 +150,11 @@
 
     <div class="wrapper">
 
-      <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="fill email">
-        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      <!-- Start linkedin Icon -->
+      <div id="gitlab" onclick="navigate(this.id)" class="fill gitlab">
+        <span class="icon"><i class="fab fa-gitlab"></i></span>
       </div>
-      <!-- End email Icon -->
+      <!-- End linkedin Icon -->
 
       <!-- Start linkedin Icon -->
       <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
@@ -151,18 +162,17 @@
       </div>
       <!-- End linkedin Icon -->
 
-      <!-- Start reddit Icon -->
-      <div id="reddit" onclick="navigate(this.id)" class="fill reddit">
-        <span class="icon"><i class="fab fa-reddit"></i></span>
+      <!-- Start email Icon -->
+      <div id="email" onclick="navigate(this.id)" class="fill email">
+        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
       </div>
-      <!-- End reddit Icon -->
+      <!-- End email Icon -->
 
       <!-- Start telegram Icon -->
-      <div id="telegram" onclick="navigate(this.id)" class="fill telegram">
-        <span class="icon"><i class="fab fa-telegram"></i></span>
+      <div id="whatsapp" onclick="navigate(this.id)" class="fill whatsapp">
+        <span class="icon"><i class="fab fa-whatsapp"></i></span>
       </div>
       <!-- End telegram Icon -->
-
 
     </div>
 
@@ -176,9 +186,12 @@
 
         if (id === "blog")
           window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
-
+          
         else if (id === "email") {
           window.open("mailto:julien.landouar@gmail.com", '_blank').focus(); //Add your email after "mailto:""
+        }
+        else if (id === "gitlab") {
+          window.open("https://gitlab.com/dixsept", '_blank').focus(); //Add your email after "mailto:""
         }
         else if (id === "facebook") {
           window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
@@ -208,7 +221,7 @@
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
         else if (id === "whatsapp") {
-          var phoneNumber = "0608015850"; // Remplacez par le numéro de téléphone souhaité
+          var phoneNumber = "+33608015850"; // Remplacez par le numéro de téléphone souhaité
           var message = "Bonjour, ceci est un message pré-rempli."; // Remplacez par le message souhaité
           var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
           window.open(url, '_blank').focus();
