@@ -101,6 +101,10 @@
       background-color: #fc6d26;
     }
 
+    .website:hover{
+      background-color: #2AABEE;
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -141,6 +145,12 @@
       <!-- Start telegram Icon -->
       <div id="whatsapp" onclick="navigate(this.id)" class="fill whatsapp">
         <span class="icon"><i class="fab fa-whatsapp"></i></span>
+      </div>
+      <!-- End telegram Icon -->
+
+      <!-- Start telegram Icon -->
+      <div id="website" onclick="navigate(this.id)" class="fill website">
+        <span class="icon"><i class="fab link"></i></span>
       </div>
       <!-- End telegram Icon -->
 
@@ -189,6 +199,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id === "website") {
+          window.open("https://jlnlndr.fr/portoflio", '_blank').focus(); //Add the url to your telegram account
         }
         else if (id === "whatsapp") {
           var phoneNumber = "+33608015850"; // Remplacez par le numéro de téléphone souhaité
